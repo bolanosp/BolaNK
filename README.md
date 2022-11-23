@@ -1,5 +1,4 @@
-# BolaNK Sneakers :mans_shoe:
-# Demo
+# Parcial BolaNK Sneakers
 Abrir [Parcial][df1]
 
 # About the project
