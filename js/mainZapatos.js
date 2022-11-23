@@ -14,7 +14,7 @@ productList.push({
   model: "NewBalance",
   description:
     " Uno de los modelos con más éxito de la firma norteamericana en zapatillas casual, unas sneakers de perfil clásico y estilo retro que imitan a las zapatillas de running. Muy coloridas y con un diseño elegante, las 996 son un clásico en materia de running que ahora dan el salto a la calle para convertirse en unas sneakers a la última moda.",
-  scale: 0.05,
+  scale: 0.4,
 });
 productList.push({
   name: "Nike Retro",

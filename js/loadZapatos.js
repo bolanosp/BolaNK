@@ -63,7 +63,7 @@ function initScene() {
     productList[1].model,
     true,
     scene1,
-    0.05
+    0.4
   );
 
   // LOAD CAR
