@@ -1,23 +1,23 @@
 //array with pruducts
 const productList = [];
 productList.push({
-  name: "Nike Uptempo",
-  price: "450.000",
-  model: "NikeUptempo",
+  name: "Nike Retro",
+  price: "$350.000",
+  model: "NikeRetro",
   description:
     "Familiar but always fresh, the iconic Air Jordan 1 is remastered for today's sneakerhead culture. This Retro High OG version goes all in with premium leather, comfortable cushioning and classic design details.",
 });
 productList.push({
-  name: "Nike Retro",
-  price: "390.000",
-  model: "NikeRetro",
+  name: "New Balance 966",
+  price: "$390.000",
+  model: "NewBalance",
   description:
-    "The Nike Air More Uptempo is a popular basketball sneaker that debuted in 1996. The “AIR” lettering draws inspiration from oversized objects from 90s graffiti and pop art. It was designed by Wilson Smith and made famous by Scottie Pippen in the late '90s. ",
+    " Uno de los modelos con más éxito de la firma norteamericana en zapatillas casual, unas sneakers de perfil clásico y estilo retro que imitan a las zapatillas de running. Muy coloridas y con un diseño elegante, las 996 son un clásico en materia de running que ahora dan el salto a la calle para convertirse en unas sneakers a la última moda.",
 });
 productList.push({
-  name: "Converse Carrito",
-  price: "120.000",
-  model: "carrito",
+  name: "Nike Jordan",
+  price: "$420.000",
+  model: "NikeJordan",
   description:
     "The Chuck 70 Counter Climate reflects the duality of the creative explorer. Dark outdoor colors and small doses of vibrant pop colors make this shoe versatile for outdoor and city life.",
 });
@@ -95,27 +95,21 @@ function renderProducts(arr) {
     const productInfoDiv = document.createElement("div");
 
     const productPrice = document.createElement("a");
-    productPrice.innerText = "$" + product.price;
+    productPrice.innerText = product.price;
     productPrice.setAttribute(
       "href",
-      "./producto.html?product=" + arr.indexOf(product)
+      "./producto" + arr.indexOf(product) + ".html"
     );
     const productName = document.createElement("a");
     productName.innerText = product.name;
     productName.setAttribute(
       "href",
-      "./producto.html?product=" + arr.indexOf(product)
+      "./producto" + arr.indexOf(product) + ".html"
     );
 
-    //productInfoDiv.setAttribute('href','./productDetail.html')
     productInfoDiv.append(productPrice, productName);
 
     const productInfoFigure = document.createElement("figure");
-
-    const icon = document.createElement("img");
-    icon.setAttribute("src", "./src/icons/bt_add_to_cart.png");
-
-    productInfoFigure.appendChild(icon);
 
     productInfo.append(productInfoDiv, productInfoFigure);
     productCard.append(divCanvas, productInfo);

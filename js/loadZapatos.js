@@ -53,7 +53,8 @@ function initScene() {
     "./src/models/" + productList[0].model + "/",
     productList[0].model,
     true,
-    scene0
+    scene0,
+    0.4
   );
 
   // LOAD NIKE RETRO
@@ -61,7 +62,8 @@ function initScene() {
     "./src/models/" + productList[1].model + "/",
     productList[1].model,
     true,
-    scene1
+    scene1,
+    0.05
   );
 
   // LOAD CAR
@@ -69,11 +71,12 @@ function initScene() {
     "./src/models/" + productList[2].model + "/",
     productList[2].model,
     true,
-    scene2
+    scene2,
+    0.4
   );
 }
 
-function loadModel_objAndMtl(PathGeneralFolder, pahtFile, show, scene) {
+function loadModel_objAndMtl(PathGeneralFolder, pahtFile, show, scene, scale) {
   if (show == true) {
     var mtlLoader2 = new THREE.MTLLoader();
     mtlLoader2.setTexturePath(PathGeneralFolder);
@@ -86,8 +89,8 @@ function loadModel_objAndMtl(PathGeneralFolder, pahtFile, show, scene) {
       objLoader2.setPath(PathGeneralFolder);
       objLoader2.load(pahtFile + ".obj", function (object) {
         //
-        object.position.set(0, 0, 0);
-        object.scale.set(0.3, 0.3, 0.3);
+        object.position.set(0, -2, 0);
+        object.scale.set(scale, scale, scale);
         //
 
         scene.add(object);
@@ -108,29 +111,18 @@ function addBasicsInit(scene) {
 
   scene.add(camera);
 
-  // const size = 10;
-  // const divisions = 100;
-
-  // const gridHelper = new THREE.GridHelper( size, divisions,0x000,0xffffff);
-
-  // scene.add(gridHelper);
-
-  const light = new THREE.AmbientLight(0xffffff, 2); // soft white light
+  const light = new THREE.AmbientLight(0xffffff, 1);
   scene.add(light);
 
-  pointLight = new THREE.PointLight(0xfcfff0, 2, 0);
-  pointLight.position.set(5, 5, 0);
+  pointLight = new THREE.PointLight(0xfcfff0, 1, 0);
+  pointLight.position.set(0, 20, 0);
   scene.add(pointLight);
-
-  // pointLight2 = new THREE.PointLight(0xfcfff0, 10, 0);
-  // pointLight2.position.set(-5, 5, 0);
-  // scene.add(pointLight2);
 
   controls0 = new THREE.OrbitControls(camera, renderer0.domElement);
   controls1 = new THREE.OrbitControls(camera, renderer1.domElement);
   controls2 = new THREE.OrbitControls(camera, renderer2.domElement);
 
-  camera.position.set(8, 2, 5);
+  camera.position.set(8, 5, 5);
 
   controls0.update();
   controls1.update();
