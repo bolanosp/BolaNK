@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>New Balance 996 - BolaNK Sneakers</title>
+    <link rel="shortcut icon" href="./src/logos/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/styleProducto.css" />
+
+    <!--Three js-->
+    <script src="./src/libs/build/three.js"></script>
+    <script src="./src/three.js-master/build/three.min.js"></script>
+    <!--CONTROLS-->
+
+    <script src="./src/libs/control/OrbitControls.js"></script>
+    <!--LOAD FILES-->
+    <script src="./src/libs/load/DRACOLoader.js"></script>
+    <script src="./src/libs/load/GLTFLoader.js"></script>
+    <script src="./src/libs/load/OBJLoader.js"></script>
+    <script src="./src/libs/load/MTLLoader.js"></script>
+  </head>
+  <body onload="start()">
+    <nav>
+      <img src="./src/icons/icon_menu.png" alt="menu" class="menu" />
+
+      <div class="navbar-left">
+        <img src="./src/logos/logo.png" alt="logo" class="logo" />
+      </div>
+
+      <div class="navbar-right">
+        <ul>
+          <li>
+            <a href="./index.html">.hola</a>
+          </li>
+          <li>
+            <a href="./zapatos.html">.zapatos</a>
+          </li>
+          <li class="inactive navbar-email">@</li>
+          <li class="inactive navbar-shopping-cart"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="canvas-container">
+        <canvas class="webgl"></canvas>
+      </div>
+      <div class="container-product-info">
+        <h1 class="title_product-info">New Balance Air 996</h1>
+        <p id="numProducto" class="inactive">1</p>
+        <p class="description_product-info">
+          Uno de los modelos con más éxito de la firma norteamericana, unas
+          sneakers de perfil clásico y estilo retro que imitan a las de running.
+          Muy coloridas y con un diseño elegante, las 996 son un clásico que
+          ahora dan el salto a la calle para convertirse en unas sneakers a la
+          última moda.
+          <br />
+          <br />
+          Preciosas y de una enorme calidad que pueden ponérselas mujeres,
+          hombres y niños. Para su diseño se ha empleado la última tecnología
+          disponible en el segmento sneakers. Gracias a su divertido y colorido
+          revestimiento en piel y malla brillante no son solo unas zapatillas de
+          deporte sino un complemento a la moda.
+          <br />
+          <br />
+          Unas sneakers para usar a diario que sobresalen por su elegancia y
+          comodidad.
+        </p>
+        <p class="title_product-info">$390.000</p>
+        <ul class="lista-tallas size-list">
+          <li>36</li>
+          <li>37</li>
+          <li>38</li>
+          <li>39</li>
+          <li>40</li>
+          <li>41</li>
+          <li>42</li>
+        </ul>
+        <button class="primary-button">Comprar</button>
+      </div>
+    </div>
+    <script src="./js/mainZapatos.js"></script>
+    <script src="./js/loadProducto.js"></script>
+  </body>
+</html>

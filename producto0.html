@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nike Air Jordan - BolaNK Sneakers</title>
+    <link rel="shortcut icon" href="./src/logos/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/styleProducto.css" />
+
+    <!--Three js-->
+    <script src="./src/libs/build/three.js"></script>
+    <script src="./src/three.js-master/build/three.min.js"></script>
+    <!--CONTROLS-->
+
+    <script src="./src/libs/control/OrbitControls.js"></script>
+    <!--LOAD FILES-->
+    <script src="./src/libs/load/DRACOLoader.js"></script>
+    <script src="./src/libs/load/GLTFLoader.js"></script>
+    <script src="./src/libs/load/OBJLoader.js"></script>
+    <script src="./src/libs/load/MTLLoader.js"></script>
+  </head>
+  <body onload="start()">
+    <nav>
+      <img src="./src/icons/icon_menu.png" alt="menu" class="menu" />
+
+      <div class="navbar-left">
+        <img src="./src/logos/logo.png" alt="logo" class="logo" />
+      </div>
+
+      <div class="navbar-right">
+        <ul>
+          <li>
+            <a href="./index.html">.hola</a>
+          </li>
+          <li>
+            <a href="./zapatos.html">.zapatos</a>
+          </li>
+          <li class="inactive navbar-email">@</li>
+          <li class="inactive navbar-shopping-cart"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="canvas-container">
+        <canvas class="webgl"></canvas>
+      </div>
+      <div class="container-product-info">
+        <h1 class="title_product-info">Nike Air Jordan</h1>
+        <p id="numProducto" class="inactive">0</p>
+        <p class="description_product-info">
+          Desde sus letras con el estilo de los grafitis hasta sus llamativas
+          líneas musculares, las Air Jordan reflejan el espíritu de los 90 como
+          ningún otro diseño.
+          <br />
+          <br />
+          Las Nike Jordan fueron las zapatillas que llevaron algunos de los
+          grandes talentos de aquella era y ahora regresan con la última pieza
+          de su legado como unas zapatillas que se convertirán en el centro de
+          todas las miradas.
+          <br />
+          <br />
+          Su combinación de colores de edición limitada amplía el look con una
+          impecable combinación de blanco sobre rojo que deslumbrará a todo el
+          mundo.
+        </p>
+        <p class="title_product-info">$450.000</p>
+        <ul class="lista-tallas size-list">
+          <li>36</li>
+          <li>37</li>
+          <li>38</li>
+          <li>39</li>
+          <li>40</li>
+          <li>41</li>
+          <li>42</li>
+        </ul>
+        <button class="primary-button">Comprar</button>
+      </div>
+    </div>
+    <script src="./js/mainZapatos.js"></script>
+    <script src="./js/loadProducto.js"></script>
+  </body>
+</html>
