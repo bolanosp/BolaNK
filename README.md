@@ -1,9 +1,13 @@
-# Parcial BolaNK Sneakers
+# 👟 Parcial BolaNK Sneakers
 Abrir [Parcial][df1]
 
-# About the project
-BolaNK Sneakers es un marketplace desarrollado para la materia de
-Computación Gráfica, haciendo uso de tecnologías como THREE.js para cargar modelos.
+# 🛒 Sobre el Proyecto
+BolaNK Sneakers es un marketplace desarrollado para la materia de Computación
+Gráfica, haciendo uso de tecnologías como THREE.js para cargar modelos.
+
+# 👥 Integrantes
+- Juan Diego Bolaños
+- Nicolás Patiño
 
 
 
