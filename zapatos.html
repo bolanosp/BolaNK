@@ -1,176 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Zapatos - BolaNK Sneakers</title>
-  <link rel="shortcut icon" href="./src/logos/logo.png" type="image/png">
-  <link rel="stylesheet" href="./css/styleZapatos.css">
+    <title>Zapatos - BolaNK Sneakers</title>
+    <link rel="shortcut icon" href="./src/logos/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/styleZapatos.css" />
 
-  <!--Three js-->
-  <script src="./src/libs/build/three.js"></script>
-  <script src="./src/three.js-master/build/three.min.js"></script>
-  <!--CONTROLS-->
+    <!--Three js-->
+    <script src="./src/libs/build/three.js"></script>
+    <script src="./src/three.js-master/build/three.min.js"></script>
+    <!--CONTROLS-->
 
-  <script src="./src/libs/control/OrbitControls.js"></script>
-  <!--LOAD FILES-->
-  <script src="./src/libs/load/DRACOLoader.js"></script>
-  <script src="./src/libs/load/GLTFLoader.js"></script>
-  <script src="./src/libs/load/OBJLoader.js"> </script>
-  <script src="./src/libs/load/MTLLoader.js"> </script>
-</head>
-<body onload="start()">
+    <script src="./src/libs/control/OrbitControls.js"></script>
+    <!--LOAD FILES-->
+    <script src="./src/libs/load/DRACOLoader.js"></script>
+    <script src="./src/libs/load/GLTFLoader.js"></script>
+    <script src="./src/libs/load/OBJLoader.js"></script>
+    <script src="./src/libs/load/MTLLoader.js"></script>
+  </head>
+  <body onload="start()">
     <nav>
-      <img src="./src/icons/icon_menu.png" alt="menu" class="menu">
-  
+      <img src="./src/icons/icon_menu.png" class="inactive" />
+
       <div class="navbar-left">
-        <img src="./src/logos/logo.png" alt="logo" class="logo">
-  
-        <ul>
-          
-        </ul>
+        <img src="./src/logos/logo.png" alt="logo" class="logo" />
       </div>
-  
+
       <div class="navbar-right">
         <ul>
           <li>
             <a href="./index.html">.hola</a>
           </li>
           <li>
-            <a href="/">.zapatos</a>
+            <a href="/zapatos.html">.zapatos</a>
           </li>
           <li class="navbar-email inactive">@</li>
-          <li class="navbar-shopping-cart">
-            <img src="./src/icons/grocery-store.png" alt="shopping cart">
-            <div>2</div>
-          </li>
+          <li class="inactive navbar-shopping-cart">@</li>
         </ul>
       </div>
-  
-      <div class="desktop-menu inactive">
-          <ul>
-            <li>
-              <a href="/" class="title">My orders</a>
-            </li>
-      
-            <li>
-              <a href="/">My account</a>
-            </li>
-      
-            <li>
-              <a href="/">Sign out</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="mobile-menu inactive">
-          <ul>
-            <li>
-              <a href="/">CATEGORÍAS</a>
-            </li>
-            <li>
-              <a href="./index.html">.hola</a>
-            </li>
-            <li>
-              <a href="./zapatos.html">.zapatos</a>
-            </li>
-          </ul>
-      
-          <ul>
-            <li>
-              <a href="/">Pedidos</a>
-            </li>
-            <li>
-              <a href="/">Cambiar Contraseña</a>
-            </li>
-          </ul>
-      
-          <ul>
-            <li>
-              <a href="/" class="email">@</a>
-            </li>
-            <li>
-              <a href="/" class="sign-out">Cerrar Sesión</a>
-            </li>
-          </ul>
-        </div>
     </nav>
-  
-    <aside id="cartContainer"class="inactive">
-      <div class="title-container">
-        <img src="./src/icons/flechita.svg" alt="arrow">
-        <p class="title">My order</p>
-      </div>
-  
-      <div class="my-order-content">
-        <div class="shopping-cart">
-          <figure>
-            <img src="https://cdn.shopify.com/s/files/1/0038/3565/8304/products/nike-air-more-uptempo-_96-921948-102-1_37538257-2c83-4ebe-b250-6aa0f175ce0c.jpg?v=1637868136">
-          </figure>
-          <p>Nike Uptempo</p>
-          <p>$450.000</p>
-          <img src="./src/icons/icon_close.png" alt="close">
-        </div>
-  
-        <div class="shopping-cart">
-          <figure>
-            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-          </figure>
-          <p>Bike</p>
-          <p>$30,00</p>
-          <img src="./src/icons/icon_close.png" alt="close">
-        </div>
-  
-        <div class="shopping-cart">
-          <figure>
-            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-          </figure>
-          <p>Bike</p>
-          <p>$30,00</p>
-          <img src="./src/icons/icon_close.png" alt="close">
-        </div>
-  
-        <div class="order">
-          <p>
-            <span>Total</span>
-          </p>
-          <p>$560.00</p>
-        </div>
-  
-        <button class="primary-button">
-          Checkout
-        </button>
-      </div>
-    </div>
-    </aside>
-  
-  
-    <aside id="productDetail"class="inactive">
+
+    <aside id="productDetail" class="inactive">
       <div class="product-detail-close">
-        <img src="./src/icons/icon_close.png" alt="close">
+        <img src="./src/icons/icon_close.png" alt="close" />
       </div>
-      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-      <!-- <div class="product-info">
-        <p>$35,00</p>
-        <p>Bike</p>
-        <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-        <button class="primary-button add-to-cart-button">
-          <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-          Add to cart
-        </button> 
-      </div>-->
+      <img
+        src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="bike"
+      />
     </aside>
-  
+
     <section class="main-container">
-      <div class="cards-container">
-      </div>
-  
+      <div class="cards-container"></div>
     </section>
 
-
-  <script src="./js/loadZapatos.js"></script>
-  <script src="./js/mainZapatos.js"></script>
-</body>
+    <script src="./js/loadZapatos.js"></script>
+    <script src="./js/mainZapatos.js"></script>
+  </body>
 </html>

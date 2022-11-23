@@ -46,20 +46,19 @@ function initScene() {
   window.addEventListener("resize", onWindowResize, false);
 
   //ligths
-  const light = new THREE.AmbientLight(0xfcfff0, 100); // soft white light
+  const light = new THREE.AmbientLight(0xfcfff0, 1); // soft white light
   scene.add(light);
 
-  pointLight = new THREE.PointLight(0xfcfff0, 100, 0);
+  pointLight = new THREE.PointLight(0xfcfff0, 1, 0);
   pointLight.position.set(5, 5, 0);
   scene.add(pointLight);
 
-  pointLight2 = new THREE.PointLight(0xfcfff0, 100, 0);
-  pointLight2.position.set(-5, 5, 0);
-  scene.add(pointLight2);
+  numProducto = document.getElementById("numProducto").innerHTML;
+  console.log(model);
 
   loadModel_objAndMtl(
-    "./src/models/" + productList[productSelect].model + "/",
-    productList[productSelect].model,
+    "./src/models/" + productList[numProducto].model + "/",
+    productList[numProducto].model,
     true,
     scene
   );
@@ -79,7 +78,11 @@ function loadModel_objAndMtl(PathGeneralFolder, pahtFile, show) {
       objLoader2.load(pahtFile + ".obj", function (object) {
         //
         object.position.set(0, 0, 0);
-        object.scale.set(0.2, 0.2, 0.2);
+        object.scale.set(
+          productList[numProducto].scale,
+          productList[numProducto].scale,
+          productList[numProducto].scale
+        );
         //
 
         model = object; //
@@ -92,7 +95,6 @@ function loadModel_objAndMtl(PathGeneralFolder, pahtFile, show) {
 function animate() {
   requestAnimationFrame(animate);
 
-  //model.rotation.x= -0.8;
   model.rotation.y -= 0.01;
 
   controls.update();

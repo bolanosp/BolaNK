@@ -1,11 +1,12 @@
 //array with pruducts
 const productList = [];
 productList.push({
-  name: "Nike Retro",
-  price: "$350.000",
-  model: "NikeRetro",
+  name: "Nike Jordan",
+  price: "$420.000",
+  model: "NikeJordan",
   description:
-    "Familiar but always fresh, the iconic Air Jordan 1 is remastered for today's sneakerhead culture. This Retro High OG version goes all in with premium leather, comfortable cushioning and classic design details.",
+    "Desde sus letras con el estilo de los grafitis hasta sus llamativas líneas musculares, las Air Jordan reflejan el espíritu de los 90 como ningún otro diseño.",
+  scale: 0.4,
 });
 productList.push({
   name: "New Balance 966",
@@ -13,13 +14,15 @@ productList.push({
   model: "NewBalance",
   description:
     " Uno de los modelos con más éxito de la firma norteamericana en zapatillas casual, unas sneakers de perfil clásico y estilo retro que imitan a las zapatillas de running. Muy coloridas y con un diseño elegante, las 996 son un clásico en materia de running que ahora dan el salto a la calle para convertirse en unas sneakers a la última moda.",
+  scale: 0.05,
 });
 productList.push({
-  name: "Nike Jordan",
-  price: "$420.000",
-  model: "NikeJordan",
+  name: "Nike Retro",
+  price: "$350.000",
+  model: "NikeRetro",
   description:
     "The Chuck 70 Counter Climate reflects the duality of the creative explorer. Dark outdoor colors and small doses of vibrant pop colors make this shoe versatile for outdoor and city life.",
+  scale: 0.4,
 });
 
 //Selectors
@@ -38,9 +41,6 @@ let productSelect = null;
 //events to opens menus (userMenu, burguermenu in mobile, cartmenu)
 userEmail.addEventListener("click", function () {
   toggleMenu(userMenuDesktop);
-});
-burguerMenuIcon.addEventListener("click", function () {
-  toggleMenu(mobileMenu);
 });
 cartMenuIcon.addEventListener("click", function () {
   toggleMenu(cartMenu);

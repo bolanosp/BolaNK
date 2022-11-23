@@ -11,7 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-image: url("../src/logos/background.jpg");
 }
 
 .inactive {
@@ -24,7 +24,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  /* border-bottom: 1px solid var(--very-light-pink); */
   background: rgb(5, 1, 1);
   background: linear-gradient(
     180deg,
@@ -147,41 +146,6 @@ nav {
   display: inline-block;
 }
 
-/* menu mobile*/
-.mobile-menu {
-  width: 80%;
-  position: absolute;
-  left: 50;
-  top: 61px;
-  padding: 24px;
-  border-radius: 24px;
-  background-color: whitesmoke;
-}
-.mobile-menu a {
-  text-decoration: none;
-  color: var(--black);
-  font-weight: bold;
-  /* margin-bottom: 24px; */
-}
-.mobile-menu ul {
-  padding: 0;
-  margin: 24px 0 0;
-  list-style: none;
-}
-.mobile-menu ul:nth-child(1) {
-  border-bottom: 1px solid var(--very-light-pink);
-}
-.mobile-menu ul li {
-  margin-bottom: 24px;
-}
-.email {
-  font-size: var(--sm);
-  font-weight: 300 !important;
-}
-.sign-out {
-  font-size: var(--sm);
-  color: var(--hospital-green) !important;
-}
 /*ShpoppingCart*/
 
 #cartContainer {
@@ -315,7 +279,8 @@ nav {
   font-size: 3.5rem;
   color: rgb(0, 179, 185);
   text-align: left;
-  /* margin-top: 28px; */
+  margin-top: 30px;
+  font-weight: bolder;
 }
 .container-product-info .description_product-info {
   font-size: 1rem;
@@ -332,7 +297,7 @@ nav {
 }
 
 .container-product-info .size-list {
-  margin-top: 110px;
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -344,7 +309,7 @@ nav {
   list-style-type: none;
   text-align: center;
   color: rgb(164, 164, 164);
-  border-radius: 8px;
+  border-radius: 50%;
   font-size: 1rem;
   border: solid 1px rgb(164, 164, 164);
   cursor: pointer;
