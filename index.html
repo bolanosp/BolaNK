@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BolaNK Sneakers</title>
+    <link
+      rel="shortcut icon"
+      href="./src/logos/logo.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./css/styleIndex.css" />
+
+    <!--Three js-->
+    <script src="./src/libs/build/three.js"></script>
+    <script src="./src/three.js-master/build/three.min.js"></script>
+    <!--CONTROLS-->
+
+    <script src="./src/libs/control/OrbitControls.js"></script>
+    <!--LOAD FILES-->
+    <script src="./src/libs/load/DRACOLoader.js"></script>
+    <script src="./src/libs/load/GLTFLoader.js"></script>
+    <script src="./src/libs/load/OBJLoader.js"></script>
+    <script src="./src/libs/load/MTLLoader.js"></script>
+  </head>
+  <body onload="start()">
+    <div class="container">
+      <nav>
+        <div class="navbar-left">
+          <img src="./src/logos/logo.png" alt="logo" class="logo" />
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+              <li>
+                <a href="/">.hola</a>
+              </li>
+              <li>
+                <a href="./zapatos.html" id="gallery-option">.zapatos</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="info-container">
+        <h4 class="title" style="padding: 0% 5% 0% 5%">Hola :D</h2>
+        <p class="paragraph">
+          En BolaNK Sneakers<br />
+          consigues los Sneakers y Accesorios más<br />
+          Exclusivos en toda Colombia.
+        </p>
+
+        <a href="./zapatos.html" class="btn-gallery">Mira Nuestros Zapatos</a>
+      </div>
+    </div>
+  </body>
+</html>
