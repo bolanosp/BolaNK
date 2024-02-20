@@ -54,7 +54,7 @@ function initScene() {
     productList[0].model,
     true,
     scene0,
-    0.4
+    0.4,
   );
 
   // LOAD NIKE RETRO
